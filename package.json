@@ -1,6 +1,6 @@
 {
   "name": "git-sc-hub",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Show GitHub PullRequests and switch it",
   "main": "index.js",
   "scripts": {

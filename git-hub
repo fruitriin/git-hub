@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-alias ghview "\
-gh pr view  --json number,title,body --template \
+set option="--json number,title,body --template \
 '{{printf \"#%v\" .number}} {{.title}}
 
 {{.body}}'"
 
-gh pr list | fzf --color --ansi --preview "ghview {1} | sed 's/\<!--.*--\>//g'  |  bat -l md -p -f" | awk '{print $1}' | xargs gh pr checkout;
+# gh pr view $option
+
+gh pr list | fzf --color --ansi --preview "gh pr view $option | sed 's/\<!--.*--\>//g'  |  bat -l md -p -f" | awk '{print $1}' | xargs gh pr checkout;
