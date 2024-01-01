@@ -1,5 +1,5 @@
 {
-  "name": "git-sub-hub",
+  "name": "git-sc-hub",
   "version": "0.0.1",
   "description": "Show GitHub PullRequests and switch it",
   "main": "index.js",
