@@ -1,4 +1,6 @@
-#git-hub
+# git-hub
+
+https://www.npmjs.com/package/git-sc-hub
 
 ```
 git hub
@@ -8,7 +10,7 @@ git hub
 ## Instalation
 
 ```
-npm install -g  git-sub-hub
+npm install -g  git-sc-hub
 ```
 
 # Requiments
