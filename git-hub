@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+alias ghview "\
+gh pr view  --json number,title,body --template \
+'{{printf \"#%v\" .number}} {{.title}}
+
+{{.body}}'"
+
+gh pr list | fzf --color --ansi --preview "ghview {1} | sed 's/\<!--.*--\>//g'  |  cat -l md -p -f" | awk '{print $1}' | xargs gh pr checkout;

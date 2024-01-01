@@ -1,0 +1,15 @@
+{
+  "name": "git-hub",
+  "version": "1.0.0",
+  "description": "Show GitHub PullRequests and switch it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "github"
+  ],
+  "author": "FruitRiin",
+  "license": "MIT"
+}
