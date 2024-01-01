@@ -6,4 +6,4 @@ gh pr view  --json number,title,body --template \
 
 {{.body}}'"
 
-gh pr list | fzf --color --ansi --preview "ghview {1} | sed 's/\<!--.*--\>//g'  |  cat -l md -p -f" | awk '{print $1}' | xargs gh pr checkout;
+gh pr list | fzf --color --ansi --preview "ghview {1} | sed 's/\<!--.*--\>//g'  |  bat -l md -p -f" | awk '{print $1}' | xargs gh pr checkout;
