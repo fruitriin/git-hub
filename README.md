@@ -36,5 +36,15 @@ npm install -g  git-sc-hub
     - [BAT English README.md](https://github.com/sharkdp/bat/blob/master/doc/README.md)https://github.com/shar
 
 - プレビューでは１行コメントアウトは除外するようにしてます
-  - preview strip <!-- --> comment if its in a line.
+  - preview strip <!-- --> comment if its in a line
+
+
+ ## Release Note
+<details>
+<summary>0.0.x</summary>
+- 2024/1/3 0.0.4  意図しない挙動になっていたのを修正
+- 2024/1/3 0.0.3  作業中のもの
+- 2024/1/1 0.0.2  npmに公開して他の人でも動くっぽいのを確認
+- 2024/1/1 0.0.1  作業中のもの
+</details>
 
