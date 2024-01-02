@@ -1,6 +1,6 @@
 # git-hub
 
-現在のリポジトリのPRを一覧し、絞り込みを行ってチェックアウトするgitサブコマンドです。
+現在のリポジトリのPRを一覧し、絞り込みを行ってチェックアウトするgitサブコマンドです。　　
 this command shows your repo prs and checkout you selected.
 
 https://github.com/fruitriin/git-hub/assets/18308639/0207c7ad-9e63-4dc4-9ced-e598d6dbc0b2
