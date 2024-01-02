@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-set option="--json number,title,body --template \
+option="--json number,title,body --template \
 '{{printf \"#%v\" .number}} {{.title}}
 
 {{.body}}'"
 
 # gh pr view $option
 
-gh pr list | fzf --color --ansi --preview "gh pr view $option | sed 's/\<!--.*--\>//g'  |  bat -l md -p -f" | awk '{print $1}' | xargs gh pr checkout;
+gh pr list | fzf --color --ansi --preview "gh pr view {1} $option | sed 's/\<!--.*--\>//g'  |  bat -l md -p -f" | awk '{print $1}' | xargs gh pr checkout;
